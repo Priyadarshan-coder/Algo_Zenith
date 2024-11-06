@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import CourseSection from './Course';
+import PractiseSection from './Practise';
+
 import ClockOutline from "../assets/ClockOutline.svg";
 import Bag from "../assets/Bag.svg";
 import Calender from "../assets/CalendarOutline.svg";
 import info from "../assets/info.svg";
 
-const ChapterLayout = () => {
+const Dashboard = () => {
   const [selectedChapter, setSelectedChapter] = useState(1);
   const [activeButton, setActiveButton] = useState('Learning Material');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -110,7 +111,7 @@ const ChapterLayout = () => {
         <div className="w-full md:w-3/4">
           {sections.map((section) => (
             <div key={section.id} className="mb-4">
-              <CourseSection
+              <PractiseSection
                 completedPercentage={section.completion}
                 id={section.id}
                 items={section.items}
@@ -123,4 +124,4 @@ const ChapterLayout = () => {
   );
 };
 
-export default ChapterLayout;
+export default Dashboard;

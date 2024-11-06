@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MailSection from "./MailSection";
+import Dashboard from "./Dashboard";
 import Bell from "../assets/Bell.svg";
 import menu from "../assets/Menu.png";
 import Grid from "../assets/ViewGridOutline.svg";
@@ -177,7 +177,7 @@ const MainPage = () => {
           </div>
         </header>
 
-        <MailSection />
+        <Dashboard />
       </main>
     </div>
   );

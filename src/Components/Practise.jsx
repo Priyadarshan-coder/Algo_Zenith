@@ -8,7 +8,7 @@ import CodeOutline from "../assets/CodeOutline.svg";
 import PlayOutline from "../assets/PlayOutline.svg";
 import Vector from "../assets/Vector.svg";
 
-const CourseSection = ({ completedPercentage, id, items }) => {
+const PractiseSection = ({ completedPercentage, id, items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const getProgressWidth = () => {
@@ -124,4 +124,4 @@ const CourseSection = ({ completedPercentage, id, items }) => {
   );
 };
 
-export default CourseSection;
+export default PractiseSection;
